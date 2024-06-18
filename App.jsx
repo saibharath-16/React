@@ -7,18 +7,26 @@ import Navbar from "./components/Navbar";
 import StateMang from "./components/StateMang";
 import Theme from "./components/Theme";
 import Toggle from "./components/Toggle";
+import { Routes,Route } from "react-router-dom";
+import HomeBtn from "./components/HomeBtn";
+import Error from "./components/Error";
+
 
 function App(){
   return(
+    
     <div className="holder">
-       <Navbar />
-       <MyFunc name="Sai Bharath"/>
-       <StateMang />
-       <Counter /><br /> 
-       {/* <ColorBox /> */}
-       <Toggle /><br /> <br /> 
-       <FetchData />
-       <Theme />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HomeBtn/>}/>
+        <Route path="/toggle" element={ <Toggle />} />
+        <Route path="/theme" element={ <Theme />}/>
+        <Route path="/myfunc" element={<MyFunc />}/>
+        <Route path="/statemang" element={<StateMang />}/>
+        <Route path="/counter" element={<Counter />}/>
+        <Route path="*" element={<Error />}/>
+       </Routes><br/>
+       <HomeBtn />
     </div>
    
   )
