@@ -31,6 +31,6 @@ function Theme() {
       <ThemedComponent />
     </ThemeProvider>
   );
-}
+};
 
 export default Theme;
