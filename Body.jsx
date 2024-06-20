@@ -2,18 +2,26 @@ import React, { useState } from 'react';
 import './Body.css';
 
 function Body() {
-  const [display, setDisplay] = useState(0);
+  const [display, setDisplay] = useState('');
+  const [history, setHistory] = useState([]);
 
   const btnClick = (value) => {
     setDisplay((prev) => prev + value);
   };
 
   const clear = () => {
-    setDisplay(0);
+    setDisplay('');
   };
 
   const cal = () => {
       setDisplay(eval(display));  
+  };
+
+  const saveRes=()=>{
+     prompt( "You are saving ",display);
+     const newEntry = eval(display);
+     setHistory([newEntry, ...history.slice(0, 9)]);
+     setInput(result.toString());
   };
 
   return (
@@ -38,8 +46,14 @@ function Body() {
           <button onClick={cal}>=</button>
           <button onClick={() => btnClick('/')}>/</button>
           <button onClick={clear}>Clear</button>
+          <button onClick={saveRes}>Save</button>
         </div>
       </div>
+      <ol>
+          {history.map((entry, index) => (
+            <li key={index}>{entry}</li>
+          ))}
+        </ol>
     </div>
   );
 }
