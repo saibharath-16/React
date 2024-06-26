@@ -1,23 +1,11 @@
-import './App.css'
-import Body from './Body'
-import Timer from './Timer'
-import FetchingApi from './FetchingApi'
-import Component2 from './Component2'
-import { createContext } from 'react';
-import Component1 from './Component1'
-
-export const varName = createContext()
-
+import { useState } from 'react'
+import Stopwatch from './Stopwatch'
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
     <>
-      {/* <Body />
-      <Timer /> */}
-      {/* <FetchingApi /> */}
-      <varName.Provider value={"Ready to change color"}>
-        <Component2 />
-      </varName.Provider>
-
+     <Stopwatch />
     </>
   )
 }
