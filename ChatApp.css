@@ -1,0 +1,55 @@
+.chatapp {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 4px solid #972626;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.user {
+    margin-bottom: 20px;
+}
+
+.userinput {
+    display: flex;
+    flex-direction: column;
+}
+
+.userlabel {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.userinputtag {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.userbtn {
+    padding: 8px;
+    width: 50px;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.userbtn:hover {
+    background-color: #0056b3;
+}
+
+.userdatacontainer {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.userdatacontent {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #e941e1;
+    border-radius: 3px;
+}
