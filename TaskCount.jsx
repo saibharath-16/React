@@ -1,28 +1,28 @@
-import { useState } from "react"
+import TaskHoc from "./TaskHoc"
+const TaskCount = (props) => {
+    // const[num,setNum]=useState(0);
 
-const TaskCount = () => {
-    const[num,setNum]=useState(0);
-
-    const increase=()=>{
-        setNum(num+1);
-    }
-    const decrease=()=>{
-        setNum(num-1);
-    }
+    // const increase=()=>{
+    //     setNum(num+1);
+    // }
+    // const decrease=()=>{
+    //     setNum(num-1);
+    // }
+    const {count,incrementCount}=props;
   return (
     <div>
-        <div><p>{num}</p></div>
-      {num<=0? (
+        <div><p>{count}</p></div>
+      {count<=0? (
         <div>
-          <button onClick={increase}>increase</button>
+          <button onClick={incrementCount}>increase</button>
         </div>
       ) : (
         <div>
-            <button onClick={increase}>increase</button>
-            <button onClick={decrease}>Decrease</button>
+            <button onClick={incrementCount}>increase</button>
+            {/* <button onClick={decrementCount}>Decrease</button> */}
         </div>)}
     </div>
   )
 }
 
-export default TaskCount
+export default TaskHoc(TaskCount,5 )
