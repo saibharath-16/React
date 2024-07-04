@@ -1,0 +1,44 @@
+.container {
+    height: 450px;
+    width: 400px;
+    background-color: palevioletred;
+    margin: auto;
+    margin-top: 50px;
+    color: #5a2121;
+    padding: 40px 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h2 {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.container ul li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid black;
+    padding-left: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.container button {
+    margin: auto;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.correct {
+    background: #02aa66;
+    border: 2px solid rgb(239, 8, 8),
+}
+
+.wrong {
+    background: #ff0000;
+    /* border-color: rgb(255, 255, 255); */
+}
