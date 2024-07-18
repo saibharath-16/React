@@ -1,39 +1,30 @@
 import React from 'react'
-import TaskProp from './TaskProp';
-// import TaskFetch from './TaskFetch';
-// import TaskCount from './TaskCount';
-// import TaskAddList from './TaskAddList';
-// import Pagination from './Pagination';
-// import ChatApp from './ChatApp'
-// import { createContext } from 'react';
-// import TaskContext1 from './TaskContext1';
+import "./App.css"
+import {Route,Routes} from "react-router-dom"
+import AddRecipe from './AddRecipe'
+import RecipeDet from './RecipeDet'
+// import WeatherCh from './WeatherCh'
+// import RvProps from './RvProps'
+import HomePage from './HomePage'
 
-// const data = [
-//   'Mobiles', 'Laptop', 'EarPhone', 'Pendrive', 'Clothes', 
-//   'Shoes', 'Watch', 'BackPack', 'Perfumes', 'Furniture'
-// ];
-//  export const messages=createContext();
 const App = () => {
-  // const data={
-  //   id:"01",
-  //   message:"I am prop From App.jsx"
-  // }
-  
+  const car={ 
+    brand:"Kia",
+    model:"2022",
+    color:"Red"
+  }  
   return (
     <div>
-      {/* <ChatApp /> */}
-      {/* <TaskFetch />  */}
-      {/* <TaskCount /><br/><br/><br/>
-      <TaskAddList /> */}
-      {/* <Pagination data={data} itemPerPage={4}/> */}
-      {/* <TaskProp data={data}/>  */}
-      {/* <messages.Provider value={"I am prop From App.jsx"}>
-      <TaskContext1/>
-      </messages.Provider> */}
+      {/* <WeatherCh /> */}
+      {/* <RvProps brand={car}/> */}
+          <Routes>
+          <Route path="/" element={<HomePage/>} />
+          <Route path="/add_recipe" element={<AddRecipe/>} />
+          <Route path="/recipe_details" element={<RecipeDet/>} />
+          </Routes>
       
     </div>
   )
 }
 
-export default App;
-
+export default App
