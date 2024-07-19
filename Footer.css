@@ -1,0 +1,29 @@
+.container{
+    background-color: #2d2f31;
+    width: auto;
+    height: 400px;
+    color: whitesmoke;
+    }
+h3{
+    text-align:justify;
+    font-size:x-large;
+    margin-left: 40px;
+    
+}
+.table {
+    padding: 20px;
+    text-align: center;
+}
+table {
+    width: 100%;
+    margin: auto;
+}
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+.logoF{
+    width: 120px;
+    height: 100px;
+    margin-left: 50px;
+}

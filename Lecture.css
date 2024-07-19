@@ -1,0 +1,58 @@
+.lecture{
+    width: 100vw;
+    height: 400px;
+    border: 2px solid black;
+}
+
+.lecture1{
+    width: 23vw;
+    height: 380px;
+    border: 2px solid black;
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+.lecpicture{
+    width: 23vw;
+    height: 200px;
+}
+.lectureContent{
+    width: 23vw;
+    height: 140px;
+    text-align: start;
+    padding: 5px;
+    margin-left: 10px;
+}
+.lectureContent p{
+    font-size:medium;
+}
+.lecture h3{
+    text-align: left;
+}
+.lecture2{
+    width: 23vw;
+    height: 380px;
+    border: 2px solid black;
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+    position: relative;
+}
+.lecture3{
+    width: 23vw;
+    height: 380px;
+    border: 2px solid black;
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+    position: relative;
+}
+.lecture4{
+    width: 23vw;
+    height: 380px;
+    border: 2px solid black;
+    margin-top: 7px;
+    margin-left: 10px;
+    margin-bottom: 7px;
+    position: relative;
+}
